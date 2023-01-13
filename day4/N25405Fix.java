@@ -1,21 +1,24 @@
-package Day4;
+package day4;
 
 import java.util.Scanner;
-public class n25304 {
+public class N25405Fix {
     public static void main(String[] args) {
         Scanner nsc = new Scanner(System.in);
 
         int X = nsc.nextInt(); //총 금액
         int N = nsc.nextInt(); //구매한 물건 종류 개수
 
-        for (int i = 0; i < N; i++) {
-            int a = nsc.nextInt(); //각 물건의 가격
-            int b = nsc.nextInt(); //개수
+        int b[][] =new int[N][2];
+        int total = 0 ;
 
-            X = X - (a * b);
+        for (int i = 0; i < b.length; i++) {
+            b[i][0] = nsc.nextInt();
+            b[i][1] = nsc.nextInt();
+            total += b[i][0] * b[i][1];
         }
 
-        if (X==0){
+
+        if (total==X){
             System.out.println("Yes");
         }else{
             System.out.println("No");

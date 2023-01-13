@@ -1,7 +1,7 @@
-package Day3;
+package day3;
 
 import java.util.Scanner;
-public class n10430 {
+public class N10430 {
     public static void main(String[] args) {
         Scanner nsc = new Scanner(System.in);
         int A = nsc.nextInt();
